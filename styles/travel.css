@@ -1,0 +1,11 @@
+body {
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+}
+
+.travels {
+    color: #131318;
+    font-size: 36px;
+}
+.nav-title > li{
+    list-style: none;
+}
