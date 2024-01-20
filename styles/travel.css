@@ -1,11 +1,153 @@
-body {
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,800;1,800&display=swap');
+
+* {
+    font-family: Mulish;
 }
 
 .travels {
     color: #131318;
     font-size: 36px;
 }
-.nav-title > li{
+
+.img {
+    width: 45px;
+    height: 50px;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    padding: 52px 135px 0 135px;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav li {
     list-style: none;
+    margin-left: 40px;
+}
+
+nav li>a {
+    text-decoration: none;
+    color: #424242;
+}
+
+.item {
+    color: #FF5400;
+}
+
+/* main */
+main {
+    padding: 0 135px;
+}
+
+/* banner section */
+.banner {
+    background-image: url('../Images/Group\ 13\ \(1\)\ \(1\).png');
+    background-repeat: no-repeat;
+    width: 1170px;
+    height: 500px;
+    background-position: 100%;
+    border-radius: 16px;
+
+}
+
+.banner {
+    justify-content: space-around;
+    text-align: center;
+}
+
+.banner-desc {
+    padding: 110px 185px;
+}
+
+.banner-title {
+    color: #fff;
+    font-size: 64px;
+}
+
+.banner-para {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400px;
+}
+
+.banner,
+input {
+    border-radius: 8px;
+    border: none;
+
+}
+
+input {
+    color: #fff;
+    width: 154px;
+    height: 42px;
+    padding: 6px 12px 6px 6px;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    border: none;
+    background-color: #FF5400;
+    color: #fff;
+    width: 154px;
+    height: 42px;
+}
+
+/* section-2 */
+.tours {
+    display: flex;
+    margin-top: 100px;
+    color: rgba(19, 19, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+#tour-title {
+    color: #131318;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+.list {
+    margin-right: 53px;
+}
+
+@media screen and (max-width:600px) {
+    .head {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .travels {
+        width: 220px;
+        font-size: 1.10rem;
+    }
+
+    .img {
+        width: 30px;
+        height: 20px;
+    }
+
+    nav>ul {
+        display: none;
+    }
+
+    main {
+        padding: 20px;
+
+    }
+    .tours{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .tour-img{
+        margin-top: 10px;
+        width: 100%;
+    }
+
 }
